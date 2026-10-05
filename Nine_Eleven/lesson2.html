@@ -10,24 +10,69 @@
         <fieldset>
             <legend>Personal Information</legend>
             <label for="name">Full Name</label>
-            <input type="text" required id="name">
+            <input type="text" placeholder="enter your name" required id="name">
+        </br>
             <label for="email">Email Address</label>
-            <input type="email" required id="email">
+            <input type="email" placeholder="enter email Address" required id="email">
+        </br>
             <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone">
+            <input type="tel" placeholder="enter phone number" name="phone" id="phone">
+        </br>
+        
         </fieldset>
 
         <fieldset>
             <legend>Ticket & Workshop</legend>
+            <label for="ticket">Select Ticket Type</label>
+            <select name="ticket" id="ticket">
+                <option value="Standard">Standard</option>
+                <option value="VIP">VIP</option>
+                <option value="Student">Student</option>
+            </select>
+            </br>
+            <label>Workshops:</label>
+            </br>
+            <label for="webp">Web Performance</label>
+            <input type="checkbox" id="webp" name="webp" value="Web Performance">
+           </br>
+            <label for="Accesbility">Accessibility</label>
+            <input type="checkbox" id="access" name="acess" value="Accesbility">
+           </br>
+            <label for="Testing">Testing</label>
+            <input type="checkbox" id="test" name="test" value="Testing">
+            </br>
+            <label>Diet:</label>
+            </br>
+            <label for="None">None</label>
+            <input type="radio" name="None" id="diet" value="None">
+            <label for="Vegan">Vegan</label>
+            <input type="radio" name="None" id="diet" value="Vegan">
+            <label for="Kosher">Kosher</label>
+            <input type="radio" name="None" id="diet" value="Kosher">
+            <label for="halal">Halal</label>
+            <input type="radio" name="None" id="diet" value="Halal">
+            <label for="other">Other</label>
+            <input type="radio" name="None" id="diet" value="Other">
+        
         </fieldset>
 
         <fieldset>
             <legend>Payment & Details</legend>
-        </fieldset>
+            <label>Card Number</label>
+            <input type="text" id="cardnumber" minlength="13" maxlength="19">
+            </br>
+            <label>Expiry Date</label>
+            <input type="month" name="date" id="date">
+            </br>
+            <label >CVV</label>
+            <input type="password" name="cvv" id="cvv">
+            </br>
+            
 
-        <fieldset>
-            <legend>Agreements</legend>
         </fieldset>
+        <button type="submit"> SUBMIT</button>
+
+        
     </form>
 </body>
 </html>
