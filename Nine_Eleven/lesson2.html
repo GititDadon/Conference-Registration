@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Personal Info</legend>
+        <label for="name">Name</label>
+        <input required 
+        type="text"
+        id="name"
+        placeholder="Enter Your Name"
+        >
+        <label for="password">Password</label>
+        <input required
+        maxlength="13"
+        minlength="8"
+        id="password"
+        placeholder="Enter Password"
+        >
+        <label for="email">Email</label>
+        <input required
+        id="email"
+        placeholder="Enter Email Address"
+        >
+        <button type="submit">Send</button>
+    </fieldset>
+    <fieldset>
+        <form>
+
+        <legend>Files & Range</legend>
+        <label for="Files">File</label>
+        <input id="file" type="file" >
+                 </br></br>
+
+        <label for="Range">Select Range</label>
+        <input id="Range" type="range" min="0" max="100" value="50" >
+                 </br></br>
+
+        <label for="images"><Select Image></label>
+        <input id="images" type="image" >
+                 </br></br>
+
+        <button type="submit">Submit</button>
+        </form>
+
+    </fieldset>
+    <fieldset>
+        <legend>Radio</legend>
+
+        <label for="female">Female</label>
+        <input type="radio" value="Female" name="Gender" id="female">
+    </br>
+        <label for="male">Male</label>
+        <input type="radio" value="Male" name="Gender" id="male">
+    </br>
+
+    </fieldset>
+     <fieldset>
+        <legend>Checklist</legend>
+        
+        <label for="female">small</label>
+        <input type="checkbox" value="small" name="small" id="small">
+    </br>
+        <label for="male">Large</label>
+        <input type="checkbox" value="large" name="large" id="large">
+    </br>
+
+    </fieldset>
+    <fieldset>
+        <legend>Select Country</legend>
+        <label for="Country">Country</label>
+        <select id="country" name="country">
+            <option value="il">israel</option>
+            <option value="us">United States</option>
+            <option value="fr">France</option>
+            <option value="uk">United Kingdom</option>
+
+        </select>
+    </fieldset>
+
+</body>
+</html>
